@@ -17,7 +17,12 @@ a{
 	height: auto;
 }
 
-
+.github-link{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 1000;
+}
 
 .header{
     height: 480px;
@@ -76,6 +81,10 @@ a{
     .nav ul li{
         padding: 10px;
         margin: 5px;
+    }
+    .github-link img{
+        width: 64px;
+        height: 64px;
     }
 }
 
