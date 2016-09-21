@@ -1,0 +1,184 @@
+/**子元素浮动时盒子高度保持**/
+div:before,div:after,
+.row:before,.row:after,
+.container:before,.container:after,
+.container-full:before,.container-full:after,
+.container-960:before,.container-960:after,
+.navbar:before,.navbar:after,
+.navbar .navbar-header:before,.navbar .navbar-header:after,
+.navbar .nav-box:before,.navbar .nav-box:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+div{
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin: 0 auto;
+}
+/**栅格系统**/
+/**响应式容器 (注IE8以上版本可用)**/
+.container{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: auto;
+  	margin-left: auto;
+	min-width: 960px;/*为了兼容不支持媒体选择的浏览器*/
+	-webkit-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);/* Safari and Chrome or liebao*/
+	-moz-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);/*Firefox */
+	-o-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);/*Opera */
+	-ms-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);/*for ie*/
+	transition:width 0.5s cubic-bezier(1,-0.02, 0, 1.04);
+}
+/**全屏容器**/
+.container-full,
+.container-960{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: auto;
+  	margin-left: auto;
+}
+.container-960{
+	width: 960px;
+	max-width: 960px;
+}
+.row{
+	margin-left: -10px;
+	margin-right: -10px;
+	min-height: 1px;
+	clear: both;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-8,.col-9,.col-10,.col-11,.col-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+  float: left;
+}
+.col-1{
+	width:8.333333%;
+}
+.col-2{
+	width: 16.666667%;
+}
+.col-3{
+	width: 25.0000%;
+}
+.col-4{
+	width: 33.333333%;
+}
+.col-5{
+	width: 41.666667%;
+}
+.col-6{
+	width: 50.0000%;
+}
+.col-7{
+	width: 58.333333%;
+}
+.col-8{
+	width: 66.666667%;
+}
+.col-9{
+	width: 75.0000%;
+}
+.col-10{
+	width: 83.333333%;
+}
+.col-11{
+	width: 91.666667%;
+}
+.col-12{
+	width: 100.0000%;
+}
+.col-offset-1{
+	margin-left:8.333333%;
+}
+.col-offset-2{
+	margin-left: 16.666667%;
+}
+.col-offset-3{
+	margin-left: 25%;
+}
+.col-offset-4{
+	margin-left: 33.333333%;
+}
+.col-offset-5{
+	margin-left: 41.666667%;
+}
+.col-offset-6{
+	margin-left: 50%;
+}
+.col-offset-7{
+	margin-left: 58.333333%;
+}
+.col-offset-8{
+	margin-left: 66.666667%;
+}
+.col-offset-9{
+	margin-left: 75%;
+}
+.col-offset-10{
+	margin-left: 83.333333%;
+}
+.col-offset-11{
+	margin-left: 91.666667%;
+}
+.col-offset-12{
+	margin-left: 100%;
+}
+@media (max-width: 768px){/**小于768**/
+	.container{
+		min-width:0;
+	}
+	.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-8,.col-9,.col-10,.col-11,.col-12{
+		float: none;
+		width: auto;
+	}
+	.col-offset-1,.col-offset-2,.col-offset-3,.col-offset-4,.col-offset-5,.col-offset-6,.col-offset-7,.col-offset-8,.col-offset-9,.col-offset-10,.col-offset-11,.col-offset-12{
+		margin-left: 0;
+	}
+}
+@media (min-width: 768px) {
+  .container {
+  	min-width:0;
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+  	min-width:0;
+    width: 970px;
+  }
+}
+@media (min-width: 1200px){
+  .container {
+  	min-width:0;
+    width: 1170px;
+  }
+}
+@media (min-width: 1440px){
+  .container {
+  	min-width:0;
+    width: 1350px;
+  }
+}
+@media (min-width: 1680px){
+  .container {
+  	min-width:0;
+    width: 1500px;
+  }
+}
+@media (min-width: 1920px){
+  .container {
+  	min-width:0;
+    width: 1620px;
+  }
+}
+@media (min-width: 2560px){
+  .container {
+  	min-width:0;
+    width: 2000px;
+  }
+}

@@ -1,0 +1,114 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans","Helvetica Neue","Microsoft YaHei","Helvetica","Meiryo UI","Malgun Gothic","Segoe UI", "Trebuchet MS", "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
+	color:#272929;
+	font-size: 1em;
+}
+
+a{
+    text-decoration:none;
+}
+/**响应式图片**/
+.responsive-img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+.header{
+    height: 480px;
+    position: relative;
+    background: #2a2f27 url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    padding-top:150px;
+}
+.logo{
+    color:#F7F7F7;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 0;
+    font-style: normal;
+}
+.nav ul{
+    list-style: none;
+    margin: 0;
+}
+.nav{
+    text-align: center;
+}
+.nav ul li{
+    display: inline-block;
+    border: solid 1px rgba(242,242,242,0.3);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    -webkit-transition: all 0.5s ease;/* Safari and Chrome or liebao*/
+    -moz-transition: all 0.5s ease;/*Firefox */
+    -o-transition: all 0.5s ease;/*Opera */
+    -ms-transition: all 0.5s ease;/*for ie*/
+    transition: all 0.5s ease;
+}
+.nav ul li a{
+    color: rgba(255,255,255,0.8);
+}
+.nav ul li:hover,
+.nav ul li.active{
+    border-radius: 30px;
+    background: rgba(255,255,255,0.8);
+}
+.nav ul li:hover a,
+.nav ul li.active a{
+    color:rgba(10,10,10,0.9);
+}
+@media (max-width: 768px){/**小于768**/
+    .header{
+        height: 250px;
+        padding-top: 50px;
+    }
+    .logo{
+        font-size: 45px;
+    }
+    .nav ul li{
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+.links{
+    padding: 15px;
+    padding-bottom: 30px;
+}
+.links,.links a{
+    color:#828282;
+}
+.links .title{
+    font-weight: normal;
+}
+.links .list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.links .list li{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #2F2F2F;
+}
+.links .list li a:hover{
+    color: #CECECE;
+}
+
+
+.copyright{
+    line-height: 50px;
+    padding: 30px;
+    text-align: center;
+    color: #505050;
+    text-shadow: 1px 1px 0px #101010;
+
+}
