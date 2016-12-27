@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blog首页模板</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/mlay.css"> -->
+    <link rel="stylesheet" href="css/github-markdown.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/widget.css">
+	<link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="js/highlight/styles/atom-one-light.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/marked.min.js"></script>
+	<script type="text/javascript" src="js/mousewheel.js"></script>
+    <script type="text/javascript" src="js/highlight/highlight.js"></script>
+    <script type="text/javascript" src="js/mtoc.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var nav = $('.navbar-mytheme');
+			var clock = null;
+			$(window).scroll(function(e){
+				if($(window).scrollTop() == 0)
+					nav.addClass('is-visible');	
+					
+			});
+			mousewheel(document.body,function(e){
+				//console.log(e.detail,e.direction,e.wheelDelta);
+				//console.log((document.body.scrollTop || document.documentElement.scrollTop));
+				//console.log(e.scrollTop,document.body.scrollTop);
+				if(e.direction == "up"){
+					nav.addClass('is-visible');
+				}else{
+					clock = setTimeout(function(){
+						nav.removeClass('is-visible');
+					},300);
+					
+				}
+			});
+
+            marked.setOptions({
+                renderer: new marked.Renderer(),
+                gfm: true,
+                tables: true,
+                breaks: false,
+                pedantic: false,
+                sanitize: false,
+                smartLists: true,
+                smartypants: false
+            });
+            //hljs.configure({useBR: true});
+            marked.setOptions({
+                highlight: function (code) {
+                    //console.log(code);
+                    var codeHtml = hljs.highlightAuto(code).value;
+                    //console.log(codeHtml);
+                    return codeHtml;
+                }
+            });
+            $.ajax({
+                url:'README.MD',
+                dataType:'text',
+
+                success:function(e){
+                    //console.log(e);
+                    marked(e,function(err,data){
+                        //console.log(err,data);
+                        $('.markdown-body').html(data);
+
+                        $('.menu-list').html($('.markdown-body').mtoc().treeHtml());
+                        $('#menu').scrollToFixed();
+                    });
+                    
+
+                }
+            });
+
+		});
+
+	</script>
+
+</head>
+<body>
+<nav class="navbar navbar-mytheme navbar-custom navbar-fixed-top is-visible">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">lanyue</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div >
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            	<ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">归档</a>
+                    </li>
+
+                    <li>
+                        <a href="">分类</a>
+                    </li>
+
+                    <li>
+                        <a href="">标签</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">关于</a>
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">归档</a>
+                    </li>
+
+                    <li>
+                        <a href="">分类</a>
+                    </li>
+
+                    <li>
+                        <a href="">标签</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">关于</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container article-body ">
+	<div class="row">
+		<!--start left-->
+		<div class="col-md-9">
+			<div class="article">
+                <h1 class="title">文章标题xxxx</h1>
+                <div class="info">
+                    <span><strong>发布于</strong>：2016-12-25 23:35 </span>
+                    <span><strong>标签</strong>：
+                        <span class="tag">测试</span>
+                        <span class="tag">demo</span>
+                        <span class="tag">自动化</span>
+                        <span class="tag">laravel</span>
+                        <span class="tag">javascript</span>
+                    </span>
+                </div>
+                <div class="content markdown-body" >
+                    <h1 id="toc_0">mblog-v1.0</h1>
+                    <blockquote>
+
+                    <p class="md_block">
+                        <span class="md_line">mblog是一个简易博客平台系统</span>
+                    </p>
+
+                    </blockquote>
+
+                    <p class="md_block">
+                        <span class="md_line"><strong>mblog</strong> 是一个简易的博客平台实现，项目前端基于 <code>boostrap</code>，后端基于流行的PHP框架 <code>laravel v5.2</code> 开发。</span>
+                    </p>
+
+
+                    <h2 id="toc_1">特性</h2>
+
+                    <ul>
+                    <li>支持多用户</li>
+                    <li>具有用户中心，可以管理自己文章，草稿，收藏夹等功能。</li>
+                    <li>支持markdown编写文章</li>
+                    <li>内置评论模块</li>
+                    <li>具有后台管理功能</li>
+                    <li>前端页面支持自适应手机屏幕（编辑界面不响应手机屏幕）。</li>
+                    </ul>
+
+                    <h2 id="toc_2">安装教程</h2>
+
+                    <blockquote>
+
+                    <p class="md_block">
+                        <span class="md_line">这里说下在window系统临时快速运行系统方法</span>
+                    </p>
+
+                    </blockquote>
+
+                    <p class="md_block">
+                        <span class="md_line">首先你得安装有php环境和mysql数据库环境。</span>
+                    </p>
+
+
+                    <p class="md_block md_has_block_below md_has_block_below_ol">
+                        <span class="md_line"><strong> 安装步骤 </strong></span>
+                    </p>
+
+
+                    <ol>
+                    <li>解压系统压缩包到磁盘目</li>
+                    <li>修改配置文件 <code>.env</code> 文件，配置数据库信息，创建数据库。</li>
+                    <li>打开cmd，cd到解压出来的目录</li>
+                    <li>执行数据库迁移迁移命令 ：</li>
+                    </ol>
+                    <div class="codehilite code_lang_bat  highlight"><pre><span></span>php artisan migrate
+                    </pre></div>
+
+                    <!--block_code_end-->
+                    <ol>
+                    <li>执行数据填充命令，创建管理员用户：</li>
+                    </ol>
+
+                    <p class="md_block">
+                        <span class="md_line">执行数据填充命令这是必须的，因为数据填充会在系统创建一个后台管理用户： <code>admin</code> ,密码： <code>123456</code>；如果没有此步骤是没办法登录后台的。</span>
+                    </p>
+
+
+                    <p class="md_block">
+                        <span class="md_line">执行数据填充命令：</span>
+                    </p>
+
+                    <div class="codehilite code_lang_bat  highlight"><pre><span></span>php artisan db:seed
+                    </pre></div>
+
+                    <!--block_code_end-->
+                    <ol>
+                    <li>通过php内置服务器快速创建服务，执行命令：</li>
+                    </ol>
+                    <div class="codehilite code_lang_bat  highlight"><pre><span></span>php -S localhost:3000 -t public
+                    </pre></div>
+
+                    <!--block_code_end-->
+                    <ol>
+                    <li>在浏览器地址栏输入 <code>localhost:3000</code> 即可浏览，后台地址是 <code>localhost:3000/admin</code></li>
+                    </ol>
+
+                    <h2 id="toc_3">关于</h2>
+
+                    <p class="md_block">
+                        <span class="md_line">本系统由 <code>蓝月萧枫</code> 编写，目前是正在开发阶段，目前功能正待完善...</span>
+                    </p>
+
+
+                    <p class="md_block">
+                        <span class="md_line">有任何问题可以Q我：1752295326</span>
+                    </p>
+                </div>
+			</div>
+		</div>
+		<!--end left-->
+		<!--start right-->
+		<div class="col-md-3 min-hide">
+			
+			<!--start 标签-->
+			<div class="widget">
+                <div class="widget-header">
+                    <span class="widget-title">标签</span>
+                    <span class="widget-link"></span>
+
+                </div>
+                <div class="tags">
+                	<a href="#" class="tag">标签名</a>
+                	<span class="tag">
+                		<span>1122</span>标签
+                	</span>
+                	<span class="tag">
+                		<span>1024</span>JavaScript
+                	</span>
+                	<span class="tag">
+                		<span>600</span>Laravel
+                	</span>
+                	<span class="tag">
+                		<span>422</span>PHP
+                	</span>
+                </div>
+            </div>
+			<!--end 标签-->
+
+
+			<!--start 友情链接-->
+			<div class="widget">
+                <div class="widget-header">
+                    <span class="widget-title">友情链接</span>
+                    <span class="widget-link"></span>
+                </div>
+                <div class="widget-body blogroll">
+					<a href="#" class="link">友情链接</a>
+                	<a href="#" class="link">蓝月的博客</a>
+				</div>
+            </div>
+			<!--end 友情链接-->
+
+			<!--start 文章目录-->
+            <div class="article-menu" id="menu">
+                <strong class="menu-header">--目录--</strong>
+                <div class="menu-list">
+                    <ul class="nav" > 
+                        <li><a href="#marked">marked</a></li>
+                        <li><a href="#install">install</a></li>
+                        <li><a href="#usage">usage</a></li>
+                        <li><a href="#browser">browser</a></li>
+                        <li><a href="#markdownstring">markdownstring</a></li>
+                        <li><a href="#options">options</a>
+                            <ul class="nav">
+                                <li><a href="#highlight">highlight</a></li>
+                                <li><a href="#renderer">renderer</a></li>
+                                <li><a href="#gfm">gfm</a></li>
+                                <li><a href="#pedantic">pedantic</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!--end 文章目录-->
+            <script type="text/javascript">
+
+                $('body').scrollspy({ target: '#menu' });
+                
+            </script>
+
+		</div>
+		<!--end right-->
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!--start footer-->
+<div class="container-fluid footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p style="text-align:center;margin-top:70px;">志向不过是记忆的奴隶，生气勃勃地降生，但却很难成长。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end footer-->
+
+</body>
+</html>

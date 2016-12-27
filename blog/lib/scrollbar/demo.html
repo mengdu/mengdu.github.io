@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" id="html" class="scrollbar pretty-scrollbar scrollbar-btn-none" data-scroll="{nowel:20,step:200}">
+<head>
+	<meta charset="UTF-8">
+	<title>scrollbar</title>
+	<link rel="stylesheet" type="text/css" href="./scrollbar.css">
+	<style type="text/css">
+		.container{
+			margin: 0 auto;
+			margin-top:50px;
+			padding: 10px;
+			width: 1000px;
+			height: 400px;
+			background: #E5E5E5;
+			overflow: auto;
+		}
+		.col-12{
+			height: 100px;
+			background: #FFFFFF;
+			margin-bottom: 15px;
+			padding: 10px;
+			overflow: auto;
+			box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+	<script type="text/javascript" src="scrollbar.js"></script>
+</head>
+<body id="body"  >
+	<div class="container scrollbar icon-scrollbar" id="test1" data-scroll="{nowel:20,step:100}">
+		<div class="col-12 scrollbar icon-scrollbar no-scroll" id="test2">
+			<ul>
+				<li>li1</li>
+				<li>li2</li>
+				<li>li3</li>
+				<li>li4</li>
+				<li>li5</li>
+				<li>li6</li>
+				<li>li7</li>
+				<li>li8</li>
+				<li>li9</li>
+				<li>li10</li>
+				<li>li11</li>
+				<li>li12</li>
+				<li>li13</li>
+				<li>li14</li>
+				<li>li15</li>
+				<li>li16</li>
+				<li>li17</li>
+				<li>li18</li>
+				<li>li19</li>
+				<li>li20</li>
+				<li>li21</li>
+				<li>li22</li>
+				<li>li23</li>
+				<li>li24</li>
+				<li>li25</li>
+				<li>li26</li>
+				<li>li27</li>
+				<li>li28</li>
+				<li>li29</li>
+				<li>li30</li>
+				<li>li31</li>
+				<li>li32</li>
+				<li>li33</li>
+				<li>li34</li>
+				<li>li35</li>
+				<li>li36</li>
+				<li>li37</li>
+				<li>li38</li>
+				<li>li39</li>
+				<li>li40</li>
+				<li>li41</li>
+				<li>li42</li>
+				<li>li43</li>
+				<li>li44</li>
+				<li>li45</li>
+				<li>li46</li>
+				<li>li47</li>
+				<li>li48</li>
+				<li>li49</li>
+				<li>li50</li>
+				<li>li51</li>
+				<li>li52</li>
+				<li>li53</li>
+				<li>li54</li>
+				<li>li55</li>
+				<li>li56</li>
+				<li>li57</li>
+				<li>li58</li>
+				<li>li59</li>
+				<li>li60</li>
+				<li>li61</li>
+				<li>li62</li>
+				<li>li63</li>
+				<li>li64</li>
+				<li>li65</li>
+				<li>li66</li>
+				<li>li67</li>
+				<li>li68</li>
+				<li>li69</li>
+				<li>li70</li>
+				<li>li71</li>
+				<li>li72</li>
+				<li>li73</li>
+				<li>li74</li>
+				<li>li75</li>
+				<li>li76</li>
+				<li>li77</li>
+				<li>li78</li>
+				<li>li79</li>
+				<li>li80</li>
+				<li>li81</li>
+				<li>li82</li>
+				<li>li83</li>
+				<li>li84</li>
+				<li>li85</li>
+				<li>li86</li>
+				<li>li87</li>
+				<li>li88</li>
+				<li>li89</li>
+				<li>li90</li>
+				<li>li91</li>
+				<li>li92</li>
+				<li>li93</li>
+				<li>li94</li>
+				<li>li95</li>
+				<li>li96</li>
+				<li>li97</li>
+				<li>li98</li>
+				<li>li99</li>
+				<li>li100</li>
+			</ul>
+			<p id="p"></p>
+		</div>
+		<div class="col-12 scrollbar simple-scrollbar scrollbar-btn-none">
+			<ul>
+				<li>li-1</li>
+				<li>li-2</li>
+				<li>li-3</li>
+				<li>li-4</li>
+				<li>li-5</li>
+				<li>li-6</li>
+				<li>li-7</li>
+				<li>li-8</li>
+				<li>li-9</li>
+				<li>li-10</li>
+				<li>li-11</li>
+				<li>li-12</li>
+				<li>li-13</li>
+				<li>li-14</li>
+				<li>li-15</li>
+				<li>li-16</li>
+				<li>li-17</li>
+				<li>li-18</li>
+				<li>li-19</li>
+				<li>li-20</li>
+			</ul>
+		</div>
+		<div class="col-12 no-scroll" id="test3">
+			<ul>
+				<li>li1</li>
+				<li>li2</li>
+				<li>li3</li>
+				<li>li4</li>
+				<li>li5</li>
+				<li>li6</li>
+				<li>li7</li>
+				<li>li8</li>
+				<li>li9</li>
+				<li>li10</li>
+				<li>li11</li>
+				<li>li12</li>
+				<li>li13</li>
+				<li>li14</li>
+				<li>li15</li>
+				<li>li16</li>
+				<li>li17</li>
+				<li>li18</li>
+				<li>li19</li>
+				<li>li20</li>
+				<li>li21</li>
+				<li>li22</li>
+				<li>li23</li>
+				<li>li24</li>
+				<li>li25</li>
+				<li>li26</li>
+				<li>li27</li>
+				<li>li28</li>
+				<li>li29</li>
+				<li>li30</li>
+				<li>li31</li>
+				<li>li32</li>
+				<li>li33</li>
+				<li>li34</li>
+				<li>li35</li>
+				<li>li36</li>
+				<li>li37</li>
+				<li>li38</li>
+				<li>li39</li>
+				<li>li40</li>
+				<li>li41</li>
+				<li>li42</li>
+				<li>li43</li>
+				<li>li44</li>
+				<li>li45</li>
+				<li>li46</li>
+				<li>li47</li>
+				<li>li48</li>
+				<li>li49</li>
+				<li>li50</li>
+				<li>li51</li>
+				<li>li52</li>
+				<li>li53</li>
+				<li>li54</li>
+				<li>li55</li>
+				<li>li56</li>
+				<li>li57</li>
+				<li>li58</li>
+				<li>li59</li>
+				<li>li60</li>
+				<li>li61</li>
+				<li>li62</li>
+				<li>li63</li>
+				<li>li64</li>
+				<li>li65</li>
+				<li>li66</li>
+				<li>li67</li>
+				<li>li68</li>
+				<li>li69</li>
+				<li>li70</li>
+				<li>li71</li>
+				<li>li72</li>
+				<li>li73</li>
+				<li>li74</li>
+				<li>li75</li>
+				<li>li76</li>
+				<li>li77</li>
+				<li>li78</li>
+				<li>li79</li>
+				<li>li80</li>
+				<li>li81</li>
+				<li>li82</li>
+				<li>li83</li>
+				<li>li84</li>
+				<li>li85</li>
+				<li>li86</li>
+				<li>li87</li>
+				<li>li88</li>
+				<li>li89</li>
+				<li>li90</li>
+				<li>li91</li>
+				<li>li92</li>
+				<li>li93</li>
+				<li>li94</li>
+				<li>li95</li>
+				<li>li96</li>
+				<li>li97</li>
+				<li>li98</li>
+				<li>li99</li>
+				<li>li100</li>
+			</ul>
+		</div>
+		<div class="col-12 scrollbar simple-scrollbar scrollbar-min scrollbar-btn-none">
+			<ul>
+				<li>li-1</li>
+				<li>li-2</li>
+				<li>li-3</li>
+				<li>li-4</li>
+				<li>li-5</li>
+				<li>li-6</li>
+				<li>li-7</li>
+				<li>li-8</li>
+				<li>li-9</li>
+				<li>li-10</li>
+				<li>li-11</li>
+				<li>li-12</li>
+				<li>li-13</li>
+				<li>li-14</li>
+				<li>li-15</li>
+				<li>li-16</li>
+				<li>li-17</li>
+				<li>li-18</li>
+				<li>li-19</li>
+				<li>li-20</li>
+			</ul>
+		</div>
+		<div class="col-12 scrollbar pretty-scrollbar">
+			<ul>
+				<li>li-1</li>
+				<li>li-2</li>
+				<li>li-3</li>
+				<li>li-4</li>
+				<li>li-5</li>
+				<li>li-6</li>
+				<li>li-7</li>
+				<li>li-8</li>
+				<li>li-9</li>
+				<li>li-10</li>
+				<li>li-11</li>
+				<li>li-12</li>
+				<li>li-13</li>
+				<li>li-14</li>
+				<li>li-15</li>
+				<li>li-16</li>
+				<li>li-17</li>
+				<li>li-18</li>
+				<li>li-19</li>
+				<li>li-20</li>
+			</ul>
+		</div>
+		<div class="col-12 scrollbar pretty-scrollbar-white scrollbar-btn-none">
+			<ul>
+				<li>li-1</li>
+				<li>li-2</li>
+				<li>li-3</li>
+				<li>li-4</li>
+				<li>li-5</li>
+				<li>li-6</li>
+				<li>li-7</li>
+				<li>li-8</li>
+				<li>li-9</li>
+				<li>li-10</li>
+				<li>li-11</li>
+				<li>li-12</li>
+				<li>li-13</li>
+				<li>li-14</li>
+				<li>li-15</li>
+				<li>li-16</li>
+				<li>li-17</li>
+				<li>li-18</li>
+				<li>li-19</li>
+				<li>li-20</li>
+			</ul>
+		</div>
+		<div class="col-12">col-4</div>
+		<div class="col-12 scrollbar icon-scrollbar" id="test4">
+			<ul>
+				<li>li1</li>
+				<li>li2</li>
+				<li>li3</li>
+				<li>li4</li>
+				<li>li5</li>
+				<li>li6</li>
+				<li>li7</li>
+				<li>li8</li>
+				<li>li9</li>
+				<li>li10</li>
+				<li>li11</li>
+				<li>li12</li>
+				<li>li13</li>
+				<li>li14</li>
+				<li>li15</li>
+				<li>li16</li>
+				<li>li17</li>
+				<li>li18</li>
+				<li>li19</li>
+				<li>li20</li>
+				<li>li21</li>
+				<li>li22</li>
+				<li>li23</li>
+				<li>li24</li>
+				<li>li25</li>
+				<li>li26</li>
+				<li>li27</li>
+				<li>li28</li>
+				<li>li29</li>
+				<li>li30</li>
+				<li>li31</li>
+				<li>li32</li>
+				<li>li33</li>
+				<li>li34</li>
+				<li>li35</li>
+				<li>li36</li>
+				<li>li37</li>
+				<li>li38</li>
+				<li>li39</li>
+				<li>li40</li>
+				<li>li41</li>
+				<li>li42</li>
+				<li>li43</li>
+				<li>li44</li>
+				<li>li45</li>
+				<li>li46</li>
+				<li>li47</li>
+				<li>li48</li>
+				<li>li49</li>
+				<li>li50</li>
+				<li>li51</li>
+				<li>li52</li>
+				<li>li53</li>
+				<li>li54</li>
+				<li>li55</li>
+				<li>li56</li>
+				<li>li57</li>
+				<li>li58</li>
+				<li>li59</li>
+				<li>li60</li>
+				<li>li61</li>
+				<li>li62</li>
+				<li>li63</li>
+				<li>li64</li>
+				<li>li65</li>
+				<li>li66</li>
+				<li>li67</li>
+				<li>li68</li>
+				<li>li69</li>
+				<li>li70</li>
+				<li>li71</li>
+				<li>li72</li>
+				<li>li73</li>
+				<li>li74</li>
+				<li>li75</li>
+				<li>li76</li>
+				<li>li77</li>
+				<li>li78</li>
+				<li>li79</li>
+				<li>li80</li>
+				<li>li81</li>
+				<li>li82</li>
+				<li>li83</li>
+				<li>li84</li>
+				<li>li85</li>
+				<li>li86</li>
+				<li>li87</li>
+				<li>li88</li>
+				<li>li89</li>
+				<li>li90</li>
+				<li>li91</li>
+				<li>li92</li>
+				<li>li93</li>
+				<li>li94</li>
+				<li>li95</li>
+				<li>li96</li>
+				<li>li97</li>
+				<li>li98</li>
+				<li>li99</li>
+				<li>li100</li>
+			</ul>
+		</div>
+		<div class="col-12" style="width:2000px">col-5</div>
+		<div class="col-12" >col-5</div>
+
+	</div>
+	<div class="container scrollbar icon-scrollbar"  data-scroll="{nowel:15,step:400}">
+		<div class="col-12">col-1</div>
+		<div class="col-12">col-2</div>
+		<div class="col-12">col-3</div>
+		<div class="col-12">col-4</div>
+		<div class="col-12">col-5</div>
+		<div class="col-12">col-6</div>
+		<div class="col-12">col-7</div>
+		<div class="col-12">col-8</div>
+		<div class="col-12">col-9</div>
+		<div class="col-12">col-10</div>
+		<div class="col-12">col-11</div>
+		<div class="col-12">col-12</div>
+		<div class="col-12">col-13</div>
+		<div class="col-12">col-14</div>
+		<div class="col-12">col-15</div>
+		<div class="col-12">col-16</div>
+		<div class="col-12">col-17</div>
+		<div class="col-12">col-18</div>
+		<div class="col-12">col-19</div>
+		<div class="col-12">col-20</div>
+		<div class="col-12">col-21</div>
+		<div class="col-12">col-22</div>
+		<div class="col-12">col-23</div>
+		<div class="col-12">col-24</div>
+		<div class="col-12">col-25</div>
+		<div class="col-12">col-26</div>
+		<div class="col-12">col-27</div>
+		<div class="col-12">col-28</div>
+		<div class="col-12">col-29</div>
+		<div class="col-12">col-30</div>
+		<div class="col-12">col-31</div>
+		<div class="col-12">col-32</div>
+		<div class="col-12">col-33</div>
+		<div class="col-12">col-34</div>
+		<div class="col-12">col-35</div>
+		<div class="col-12">col-36</div>
+		<div class="col-12">col-37</div>
+		<div class="col-12">col-38</div>
+		<div class="col-12">col-39</div>
+		<div class="col-12">col-40</div>
+		<div class="col-12">col-41</div>
+		<div class="col-12">col-42</div>
+		<div class="col-12">col-43</div>
+		<div class="col-12">col-44</div>
+		<div class="col-12">col-45</div>
+		<div class="col-12">col-46</div>
+		<div class="col-12">col-47</div>
+		<div class="col-12">col-48</div>
+		<div class="col-12">col-49</div>
+		<div class="col-12">col-50</div>
+	</div>
+	
+	<div class="container scrollbar simple-scrollbar no-scroll" >
+		<div class="col-12" style="height:2000px;">col-1</div>
+		<div class="col-12">col-2</div>
+		<div class="col-12" style="width:2000px;">col-3</div>
+	</div>
+	<div class="container scrollbar simple-scrollbar-white no-scroll" >
+		<div class="col-12" style="height:2000px;">col-1</div>
+		<div class="col-12">col-2</div>
+		<div class="col-12" style="width:2000px;">col-3</div>
+	</div>
+	<div class="container scrollbar simple-scrollbar scrollbar-min no-scroll" >
+		<div class="col-12" style="height:2000px;">col-1</div>
+		<div class="col-12">col-2</div>
+		<div class="col-12" style="width:2000px;">col-3</div>
+	</div>
+
+	<div class="container scrollbar pretty-scrollbar no-scroll" >
+		<div class="col-12" style="height:2000px;">col-1</div>
+		<div class="col-12">col-2</div>
+		<div class="col-12" style="width:2000px;">col-3</div>
+	</div>
+	<div class="container scrollbar pretty-scrollbar-white scrollbar-btn-none no-scroll" >
+		<div class="col-12" style="height:2000px;">col-1</div>
+		<div class="col-12">col-2</div>
+		<div class="col-12" style="width:2000px;">col-3</div>
+	</div>
+</body>
+</html>

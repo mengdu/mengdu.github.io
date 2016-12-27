@@ -1,0 +1,84 @@
+.article-body{
+	margin-top: 100px;
+}
+
+.article .title{
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	padding-top:10px;
+	padding-bottom: 0.8em; 
+	border-bottom:solid 1px #EEEEEE;
+}
+.article .content{
+	font-family: inherit;
+	font-size: 0.9em;
+}
+.article .info{
+	color: #a5a5a5;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+	font-size: 0.9em;
+}
+/* .article-menu{
+	position: fixed;
+	top: 50px;
+} */
+.article-menu{
+	padding: 0;
+	margin: 0;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.article-menu .menu-header{
+	font-weight: bold;
+    color: #9a9a9a;
+}
+.article-menu li>a{
+	border-left:solid 2px transparent;
+}
+.article-menu li>a{
+	color: #4D555D;
+	padding: 5px 10px;
+	font-size: 0.9em;
+}
+.article-menu li.active>a{
+	background: #F6F6F6;
+	color: #242424;
+	font-weight: bold;
+	border-left:solid 2px #5DADFA;
+}
+
+.article-menu li .nav{
+	display: none;
+}
+.article-menu li .nav li>a{
+	padding-left: 25px;
+}
+.article-menu li.active .nav{
+	display: block;
+}
+.article-menu li .nav li.active>a{
+	border-left:solid 1px #B415D3;
+}
+pre{
+	/*background-image: url(../images/blueprint.png);*/
+	background-color: #F2F2F2;
+	
+	border:solid 1px #F2F2F2;
+	border-radius: 3px;
+}
+.markdown-body blockquote{
+	padding: 1em;
+	background: #F6F6F6;
+	border-left: solid 2px #5DADFA;
+	font-size: 0.9em;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5{
+	border-bottom: none;
+}

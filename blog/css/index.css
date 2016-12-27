@@ -1,0 +1,116 @@
+
+.banner{
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+	background-color: #33C5C5; 
+}
+.bloger-info-bg{
+	height: 400px;
+}
+.bloger-info-box{
+	position: inherit;
+	background: inherit;
+}
+
+.bloger-info-box .user-img{
+	width: 128px;
+	height: 128px;
+	border: none;
+}
+.bloger-info-box .user-name,
+.bloger-info-box .user-sign{
+	color: #FFF;
+}
+.bloger-info-box .user-name{
+	margin: 20px 0;
+    font-size: 5em;
+
+}
+.bloger-info-box .user-sign{
+	font-size: 1em;
+	padding: 10px;
+    background: rgba(255, 255, 255, 0.27);
+    display: inline-block;
+    border-radius: 3px;
+    max-width: 400px;
+}
+
+.article-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-item{
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom:solid 1px #EEEEEE;
+}
+.list-item .item-title{
+	font-size: 1.3em;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.list-item .item-title a{
+	text-decoration:none;
+	color: #404040;
+}
+.list-item .item-title a:hover{
+	color: #00A29D;
+}
+.list-item .item-description{
+	padding: 5px 0;
+	font-size: 0.9em;
+    color: #777676;
+}
+.list-item .item-meta{
+	color: #bdbdbd;
+}
+
+.tags:before,
+.tags:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.blogroll .link{
+	color: #9a9a9a;
+    margin: 5px;
+}
+.blogroll .link:hover{
+	color: #00A29D;
+}
+
+
+
+.data-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.data-list li{
+	line-height: 30px;
+}
+.data-list .point{
+	display: block;
+    background: #e8e8e8;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+
+}
+.data-list .list-text{
+	margin-left: 8px;
+    color: #4c4b4b;
+}
+.data-list .list-text:hover{
+	color: #00A29D;
+}
+.data-list .number{
+	float: right;
+    color: #b5b5b5;
+}

@@ -1,0 +1,33 @@
+.widget-header:before,
+.widget-header:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.widget{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.widget-header{
+    line-height: 25px;
+    border-bottom: solid 1px #EAEAEA;
+}
+.widget-header .widget-title{
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.widget-header .widget-link{
+    float: right;
+    padding: 5px;
+}
+.widget-header .widget-link a{
+    color: #2E8EED;
+}
+.widget-header .widget-link a.active{
+    color: #A7A7A7;
+}
+.widget-body{
+    padding: 5px;
+}

@@ -1,0 +1,93 @@
+body{
+    font-family: "Microsoft YaHei", Helvetica, "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
+    font-size: 14px;
+    word-wrap: break-word;
+    background: #fdfdfd;
+}
+
+
+.navbar-mytheme{
+	top: -51px;
+	box-shadow: 0 0px 3px rgba(12, 12, 12, 0.0);
+	-webkit-transition: all 1s ease;/* Safari and Chrome or liebao*/
+	-moz-transition: all 1s ease;/*Firefox */
+	-o-transition: all 1s ease;/*Opera */
+	-ms-transition: all 1s ease;/*for ie*/
+	transition: all 1s ease;
+}
+
+
+
+.navbar-mytheme a{
+	color: #FFF;
+	opacity: 0.9;
+}
+.navbar-mytheme .nav li a:hover{
+	background: none;
+	opacity: 1;
+}
+.navbar-mytheme .icon-bar{
+    background: #5AAAFA;
+}
+
+.navbar-mytheme.is-visible{
+	top: 0;
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 0px 3px rgba(12, 12, 12, 0.2);
+}
+.navbar-mytheme.is-visible a{
+	color: #646464;
+}
+.navbar-mytheme.is-visible .nav li a:hover{
+	color: #00A29D;
+}
+
+
+.navbar-mytheme.is-fixed{
+	top: 0;
+	background: none;
+	box-shadow: none;
+}
+.navbar-mytheme.is-fixed a{
+	color: #fff;
+}
+.navbar-mytheme.is-fixed .nav li a:hover{
+	color: #fff;
+}
+
+
+
+
+
+
+.footer{
+	margin-top: 150px;
+	background: #383838;
+	color: #A0A0A0;
+	min-height: 150px;
+}
+
+
+
+.tag,
+.tag:visited{
+	background: #EBF0E1;
+    color: #0DBC86;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 3px 7px;
+    font-size: 12px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.tag:hover{
+	background: #017E66;
+	color: #FFF;
+	text-decoration: none;
+}
+
+@media (max-width: 768px){
+	.min-hide{
+		display: none;
+	}
+}
