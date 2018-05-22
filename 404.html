@@ -2,56 +2,83 @@
 <html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <!--切换到兼容模式时强制在最新内核的渲染模-->
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
-  <!--默认打开模式 webkit代表极速模式 ,ie-comp(IE兼容模式)  ie-stand(IE标准模式)-->
-  <!-- <meta name="renderer" content="webkit|ie-stand|ie-comp"> -->
-  <title>404-not fount !</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <title>404 Page Not Found !</title>
   <style >
-    html,body{
-      height: 100%;
-      font-family: '微软雅黑';
-      font-size: 0.9em;
-    }
-    body{
-      background: #fff;
-      display: table;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      overflow: hidden;
-    }
-    .notfount{
-      text-align: center;
-      display: table-cell;
-      vertical-align: middle;
-    }
-    .notfount img{
-      max-width: 100%;
-      height: auto;
-      border: none;
-      text-decoration: none;
-    }
-    .btn{
-    	color: #fff;
-    	padding: 10px;
-    	background:#5BC0DE;
-    	border-radius: 3px;
-    	text-decoration: none;
-    }
-    .btn:hover{
-    	background:#31B0D5;
-    }
+  body{
+    background: #ECF0F5;
+  }
+  a{
+    text-decoration: none;
+  }
+  .error-panel{
+    position: relative;
+    width: 250px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: Roboto, Segoe UI, "Microsoft YaHei";
+  }
+  .error-panel:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+  }
+  .error-panel .error-code {
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+  }
+  .error-panel .error-description{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .error-panel .error-ctrl{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .error-panel .copyright{
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
   </style>
 <head>
 <body>
 
-<div class="notfount">
+<!-- <div class="notfount">
     <img src=" http://mengdu.github.io/images/404.jpg" >
     <div class="link">
       <a href="http://mengdu.github.io" class="btn">返回主页</a>
       <a href="https://www.github.com/mengdu" class="btn">GitHub</a>
     </div>
+</div> -->
+
+<div class="error-panel animated fadeInUp">
+  <h1 class="error-code">404</h1>
+  <p class="error-description">Page Not Found</p>
+  <div class="error-ctrl">
+    <a href="/">
+      <button class="m-button m-button-info m-button-rounded" type="info" @click="$router.push({name: 'home'})"><i class="fa fa-home"></i>&nbsp;主页</button>
+    </a>
+    <a href="#" onclick="history.back()">
+    <button class="m-button m-button-type-plain m-button-rounded" @click="$router.back()"><i class="fa fa-arrow-left"></i>&nbsp;返回</button>
+    </a>
+  </div>
+  <p class="copyright">@lanyue 版权所有</p>
 </div>
+
 </body>
 </html>
