@@ -1,98 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <!--切换到兼容模式时强制在最新内核的渲染模-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!--默认打开模式 webkit代表极速模式 ,ie-comp(IE兼容模式)  ie-stand(IE标准模式)-->
+  <meta charset="UTF-8">
+  <title>蓝月萧枫的个人网站 - 小书屋</title>
+  <meta name="Author" content="lanyue">
+  <meta name="Keywords" content="个人网站，博客，蓝月萧枫，lanyueos，lanyue">
+  <meta name="Description" content="蓝月萧枫的个人网站">
   <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-  <title>蓝月萧风的主页--GitHub Page</title>
-  <link rel="stylesheet" type="text/css" href="css/common.css">
-  <link rel="stylesheet" type="text/css" href="css/mlay.css">
-  <style type="text/css">
-    body{
-      padding: 0;
-      margin: 0;
-      background:#F4F4F4;
-      overflow: hidden;
-    }
-    .mlay{
-      background-color:transparent;
-    }
-    .user-img{
-      width: 128px;
-      height: 128px;
-      border: solid 5px rgba(224, 224, 224, 0.47);
-      border-radius: 128px;
-    }
-    .user-img:hover{
-      box-shadow: 0 0 6px rgba(33,35,38,0.3);
-    }
-    .user-name{
-      color: #2A2A2A;
-    }
-    .user-sign{
-      color: #585A5A;
-    }
-    .user-links a{
-      color: #36373a;
-      text-decoration: none;
-      padding: 5px;
-      font-weight: bold;
-      border-radius: 3px;
-    }
-    .user-links a:hover{
-      color: #0698d2;
-      background:#E8E8E8;
-    }
-
-    .tips{
-      width: 300px;
-      color: #F2F2F2;
-      text-align: center;
-      padding: 5px;
-      background: #5FC5C7;
-      transform: rotate(45deg);
-      position: fixed;
-      right: -94px;
-      top: 34px;
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    }
-    .tips-info{
-      padding: 10px;
-      border:dashed 1px #fff;
-    }
-  </style>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?52da2206014abb25701329b4814e1d1f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 </head>
 <body>
-  <canvas id="Mycanvas"></canvas>
-  <div class="tips">
-    <div class="tips-info">Page 正在建设中...</div>
-  </div>
-  <div class="mlay">
-    <div class="mlay-body">
-      <div class="user-info">
-        <div class="user-img-box">
-          <a href="https://www.github.com/mengdu" title="mengdu的GitHub主页">
-            <img src="images/user.jpg" class="user-img">
+<div class="website-bg">
+  <div class="website-bg-img"></div>
+  <div class="website-bg-shade"></div>
+</div>
+<div class="center-layout">
+  <div class="center-layout-body">
+    <h1 class="website-title animated fadeInDown">蓝月萧枫的个人网站 ● 小书屋</h1>
+    <div class="info-box animated fadeInUp">
+      <div class="info-centent">
+        <div class="info-header"><img src="https://avatars0.githubusercontent.com/u/11366654?s=460&v=4" class="info-logo"></div>
+        <h1 class="info-title animated fadeInUp">蓝月萧枫</h1>
+        <p class="text-center">JavaScript、Node.js、Vue.js、React、PHP</p>
+        <nav class="navbar">
+          <ul class="navbar-item">
+            <li class="nav-item"><a href="/" class="active">首页</a></li>
+            <li class="nav-item"><a href="https://www.lanyueos.com/electron-browser">作品</a></li>
+            <li class="nav-item"><a href="/resume.pdf">简历</a></li>
+            <li class="nav-item"><a href="https://www.github.com/mengdu">关于</a></li>
+          </ul>
+        </nav>
+
+        <div class="text-center" style="margin-top: 30px">
+          <a href="https://www.github.com/mengdu" target="_blank">
+          <button class="m-button m-button-large m-button-info m-button-rounded"><i class="fa fa-github"></i>&nbsp;Github</button>
+          </a>&nbsp;
+          <a href="https://blog.lanyueos.com">
+          <button class="m-button m-button-large m-button-success m-button-type-plain m-button-rounded"><i class="fa fa-code"></i>&nbsp;My blog</button>
           </a>
         </div>
-        <h2 class="user-name">mengdu</h2>
-        <p class="user-sign">专注web技术研究，做一个造轮子的青年。</p>
-        <p class="user-links">
-          <a href="http://mengdu.github.io/blog" class="btn btn-info">博客</a>
-          <a href="https://www.github.com/mengdu" class="btn btn-primary">github</a>
-          <a href="static/mengdu-php-resume.pdf" class="btn btn-primary">个人简历</a>
-        </p>
-        
 
       </div>
-      
     </div>
+
   </div>
-  <script type="text/javascript" src="js/canvas-effect.js"></script>
+</div>
+
 </body>
 </html>
-
